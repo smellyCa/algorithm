@@ -11,7 +11,7 @@ void replace(char s[],int len){
 	}
 	newLength=len+spaceNum*2;
 	s[newLength]='\0';
-	for(i=len-1;i>=0;i--){ //µ¹Ğò±éÀú×Ö·û´®
+	for(i=len-1;i>=0;i--){ //å€’åºéå†å­—ç¬¦ä¸²
 		if(s[i]==' '){
 			s[newLength-1]='0';
 			s[newLength-2]='2';
