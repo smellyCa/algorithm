@@ -27,6 +27,7 @@ Node* partition(Node* list,int x){
 	Node* previous;
 	Node* temp;
 	while(current!=NULL){
+		//Put every node that is less than x at the head
 		if(current->data<x&&current!=list){
 			temp=current->next;			
 			current->next=list;
