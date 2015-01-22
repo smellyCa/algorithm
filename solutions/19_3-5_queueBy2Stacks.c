@@ -51,7 +51,7 @@ Queue* createQueue(){
 }
 
 void reverse(Queue* q){
-	if(q->queue==NULL){
+	if(q->queue->head==NULL){
 		Node* current=q->stack->head;
 		while(current!=NULL){
 			push(q->queue,current->data);
@@ -83,7 +83,7 @@ void printNode(Node* n){
 }
 
 void printQueue(Queue* q){
-	if(q->queue!=NULL){
+	if(q->queue->head!=NULL){
 		printf("Queue: ");
 		printNode(q->queue->head);
 	}
@@ -98,7 +98,6 @@ int main(){
 	enqueue(q,1);
 	enqueue(q,2);
 	enqueue(q,3);
-	printQueue(q);
 	enqueue(q,4);
 	enqueue(q,5);
 	printQueue(q);
@@ -106,6 +105,7 @@ int main(){
 	dequeue(q);
 	printQueue(q);	
 	dequeue(q);
+	printQueue(q);	
 	dequeue(q);
 	printQueue(q);
 
