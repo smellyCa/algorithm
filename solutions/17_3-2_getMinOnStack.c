@@ -1,4 +1,5 @@
-//Use a single array to implement three stacks
+//Design a stack which, has function push pop and min
+//All three functions operate in O(1) time
 
 #include<stdio.h>
 #include<stdlib.h>
