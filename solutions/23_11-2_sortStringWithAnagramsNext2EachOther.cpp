@@ -1,4 +1,5 @@
-//write code to remove duplicates from an unsorted linked list
+//Sort an array of strings so that 
+//all the anagrams are next to each other
 
 #include <iostream.h>
 #include <hash_map.h>
