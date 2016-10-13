@@ -1,0 +1,17 @@
+Recursive vs iterative
+	Recursion solutions are often less efficient, in terms of both time and space than iteration. (In each recursive call, certain values (the set of params and local vars and where to return to when done) are placed onto the stack - this not only takes time, but can eat away at your resources)
+	All recursive solution can be implemented iteratively
+
+
+HashMap vs HashTable
+	Hashtable is synchronized, whereas HashMap is not. This makes HashMap better for non-threaded applications, as unsynchronized Objects typically perform better than synchronized ones. (Make HashMap sync by Collections.synchronizedMap (myMap))
+	Hashtable does not allow null keys or values. HashMap allows one null key and any number of null values.
+	HashMap does not guarantee that the order of the map will remain constant over time. (Can be solve using LinkedHashMap - one of HashMap's subclasses)
+
+arraylist vs linkedlist
+LinkedList should be preferred if: 
+	there are no large number of random access of element
+	there are a large number of add/remove operations
+
+
+PriorityQueue is implemented with min-heap. Use comparator to change it into max-heap. So offer() & poll() is O(log n), add(Object) & remove(Object) is O(n), peek() & size() is O(1).
